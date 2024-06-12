@@ -1,0 +1,28 @@
+plan a seguir para entender la herencia
+
+a) En el primer ejemplo creamos la clase EmpleadoPorComision, que contiene como datos miembro private un
+primer nombre, apellido paterno, número de seguro social, tarifa de comisión ( porcentaje) y monto de ventas
+en bruto (es decir, total).
+
+b) El segundo ejemplo declara la clase EmpleadoBaseMasComision, que contiene como datos miembro private
+un primer nombre, apellido paterno, número de seguro social, tarifa de comisión, monto de ventas en bruto
+y salario base. Para crear esta última clase, escribiremos cada línea de código que ésta requiera;
+Mast atrde veremos que es mucho más eficiente crear esta clase haciendo que herede de la clase EmpleadoPorComision.
+
+c) El tercer ejemplo define una nueva versión de la clase EmpleadoBaseMasComision que hereda directamente
+de la clase EmpleadoPorComision (es decir, un EmpleadoBaseMasComision es un EmpleadoPorComision que
+también tiene un salario base) y trata de acceder a los miembros private de la clase EmpleadoPorComision ; esto
+produce errores de compilación, ya que la clase derivada no tiene acceso a los datos private de la clase base.
+
+d) El cuarto ejemplo muestra que si los datos de EmpleadoPorComision se declaran como protected, una nueva
+versión de la clase EmpleadoBaseMasComision que hereda de la clase EmpleadoPorComision puede acceder a
+los datos de manera directa. Para este fin, definimos una nueva versión de la clase EmpleadoPorComision con
+datos protected. Tanto las clases heredadas como no heredadas de EmpleadoBasePorComision contienen
+una funcionalidad idéntica, pero le mostraremos que la versión de EmpleadoBaseMasComision que hereda de
+la clase EmpleadoPorComision es más fácil de crear y manipular.
+
+e) Una vez que hablemos sobre la conveniencia de utilizar datos protected , crearemos el quinto ejemplo, que
+establece los datos miembro de EmpleadoPorComision de vuelta a private, para hacer cumplir las buenas
+prácticas de programacion. Este ejemplo demuestra que la clase derivada EmpleadoBaseMasComision
+puede usar las funciones miembro public de la clase base EmpleadoPorComision para manipular los
+datos private de EmpleadoPorComision.
